@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <math.h>
 using namespace std;
 
 int main()
@@ -12,11 +11,12 @@ int main()
 		ivec.push_back(i);
 	}
 	auto j = ivec.size();
-	for (decltype(ivec.size()) j = 0; j != ivec.size(); j++) {
-		if (j > 0) {
-			cout << (ivec[j] + ivec[j - 1]) << ' ';
-		}
+	for (decltype(ivec.size()) k = 0; k != ivec.size(); k++) {
+		
+		cout << (ivec[k] + ivec[j-1 - k])<<' ';
+				
 	}
-
+		
 	return 0;
 }
+
